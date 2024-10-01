@@ -20,6 +20,14 @@ This project focuses on predicting the **Mechanism of Action (MoA)** of drugs us
 - **AUC**: 0.75
 - **Logarithmic Loss**: 0.018
 
+## 📐 TabNet Architecture
+TabNet uses a combination of attention mechanisms and sequential feature selection. It allows learning from tabular data without extensive preprocessing. The architecture is composed of the following:
+- **Feature Transformer**: A shared network for processing input data.
+- **Attentive Transformer**: It selects relevant features dynamically.
+- **Sparsemax Activation**: Provides sparse attention for feature selection.
+
+TabNet balances interpretability and performance by focusing on the most relevant features, which is beneficial for multi-label classification tasks like MoA prediction.
+
 ## 🚀 How to Run the Project
 Clone the repository and run the model:
 ```bash
